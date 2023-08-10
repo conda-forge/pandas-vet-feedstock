@@ -1,13 +1,13 @@
 {% set name = "pandas-vet" %}
-{% set version = "0.2.3" %}
+{% set version = "2023.8.1" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 58b64027a4c192b4b62272c1d8fdecc1733352452401282b697c1a32abe4656a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ae9fd528d5d41c33ff101afb775fc19e619b0bcf6785c7dea86b6e0087879920
 
 build:
   noarch: python
